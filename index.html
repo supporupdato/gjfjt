@@ -1,13 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Sign in</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
 <body>
-
   <div class="card">
     <div class="logo">
       <!-- Google G logo -->
@@ -41,14 +32,9 @@
         return;
       }
 
-      // Clear error
       errorDiv.textContent = "";
-
-      // Save email and go to password page
       localStorage.setItem("userEmail", email);
       window.location.href = "password.html";
     }
   </script>
-
 </body>
-</html>
