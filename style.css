@@ -1,115 +1,77 @@
-* {
-  box-sizing: border-box;
-}
-
+/* Global body styling */
 body {
-  margin: 0;
   font-family: Arial, sans-serif;
   background: #f1f3f4;
-  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 16px;
+  height: 100vh;
+  margin: 0;
 }
 
+/* Card container */
 .card {
-  background: #ffffff;
-  width: 100%;
-  max-width: 380px;
-  padding: 32px;
+  background: white;
+  padding: 40px;
   border-radius: 8px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  width: 360px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+  text-align: center;
 }
 
-/* Logo */
+/* Logo spacing */
 .logo {
   margin-bottom: 20px;
 }
 
 /* Headings */
 h1 {
-  margin: 0;
-  font-size: 24px;
-  font-weight: normal;
+  margin-bottom: 8px;
 }
 
-.subtitle {
-  margin-top: 6px;
-  color: #5f6368;
+/* Email display pill */
+.email-pill {
+  display: inline-block;
+  background: #e8f0fe;
+  color: #1967d2;
+  border-radius: 18px;
+  padding: 6px 14px;
   font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  user-select: none;
 }
 
-/* Input */
-input {
+/* Inputs */
+input[type="email"],
+input[type="password"] {
   width: 100%;
-  padding: 14px 12px;
-  margin-top: 20px;
+  padding: 12px;
   font-size: 16px;
+  margin-top: 15px;
   border: 1px solid #ccc;
   border-radius: 4px;
+  box-sizing: border-box;
 }
 
-input:focus {
-  outline: none;
-  border-color: #1a73e8;
+/* Buttons */
+button {
+  margin-top: 30px;
+  background: #1a73e8;
+  border: none;
+  color: white;
+  padding: 10px 22px;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+  width: 100%;
 }
 
 /* Links */
 .link {
   display: inline-block;
-  margin-top: 12px;
-  font-size: 14px;
+  margin-top: 10px;
   color: #1a73e8;
-  text-decoration: none;
-}
-
-.link:hover {
-  text-decoration: underline;
-}
-
-/* Actions */
-.actions {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 32px;
-  flex-wrap: wrap;
-  gap: 12px;
-}
-
-/* Button */
-button {
-  background: #1a73e8;
-  color: #ffffff;
-  border: none;
-  padding: 10px 24px;
   font-size: 14px;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-button:hover {
-  background: #1558c0;
-}
-
-/* 📱 Mobile adjustments */
-@media (max-width: 480px) {
-  .card {
-    padding: 24px 20px;
-  }
-
-  h1 {
-    font-size: 22px;
-  }
-
-  .logo svg {
-    width: 40px;
-    height: 40px;
-  }
-
-  .actions {
-    flex-direction: column;
-    align-items: flex-end;
-  }
+  text-decoration: none;
 }
